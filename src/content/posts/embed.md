@@ -1,7 +1,9 @@
 ---
 title: 在文章中嵌入视频和代码
 date: 2024-04-04
-tags: [Video, Markdown]
+tags:
+  - Video
+  - Markdown
 category: 例子
 summary: 这篇文章介绍了如何在文章中嵌入视频和代码。
 ---
