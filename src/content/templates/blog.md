@@ -2,7 +2,7 @@
 title: { { title } }
 date: { { date } }
 tags: [{ { tags } }]
-category: { { category } }
+category:
 comments: true
 draft: true
 ---
