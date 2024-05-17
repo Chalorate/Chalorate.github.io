@@ -1,11 +1,11 @@
 {
   "site": {
     "url": "https://Chalorate.github.io",
-    "title": "Gyoza",
-    "description": "这是一个使用 Astro 和 React 开发的博客主题。",
-    "keywords": "Gyoza,blog,Astro,theme,lxchapu,博客主题",
+    "title": "Chalorate",
+    "description": "这里是Chalorate的个人博客。",
+    "keywords": "Chalorate,blog,博客,技术,学习,分享,记录",
     "lang": "zh-CN",
-    "favicon": "/favicon.ico",
+    "favicon": "/luna.ico",
     "appleTouchIcon": "/apple-touch-icon.png"
   },
   "author": {
