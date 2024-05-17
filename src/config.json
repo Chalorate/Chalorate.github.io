@@ -9,19 +9,19 @@
     "appleTouchIcon": "/apple-touch-icon.png"
   },
   "author": {
-    "name": "lxchapu",
+    "name": "Chalorate",
     "twitterId": "@lxchapu",
     "avatar": "https://s2.loli.net/2024/04/30/ozsnuS5Ihf3xMBG.webp"
   },
   "hero": {
-    "name": "Gyoza",
-    "bio": "A staic blog template build with Astro and React.",
+    "name": "Chalorate",
+    "bio": "这里是Chalorate的个人博客。",
     "description": "Clean, Cute, Fast.",
     "socials": [
       {
         "name": "Github",
         "icon": "icon-github",
-        "url": "https://github.com/lxchapu/astro-gyoza",
+        "url": "https://github.com/Chalorate",
         "color": "rgb(24, 23, 23)"
       },
       {
