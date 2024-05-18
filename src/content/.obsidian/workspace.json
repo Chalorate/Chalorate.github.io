@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "posts/build-blog.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": true
               }
             }
@@ -149,11 +149,11 @@
   },
   "active": "a477614dffb4bfa9",
   "lastOpenFiles": [
+    "posts/markdown.md",
+    "posts/build-blog.md",
     "posts/guide.md",
     "posts/embed.md",
     "posts/how-to-use-icons.md",
-    "posts/markdown.md",
-    "posts/build-blog.md",
     "templates/blog.md",
     "spec/projects.md",
     "spec/friends.md",
