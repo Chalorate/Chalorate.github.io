@@ -15,6 +15,7 @@ summary: 这篇文章记录了使用Astro与GitHub Pages基于模板（gyoza）�
 ### 参考链接：
 
 [Astro教程](https://docs.astro.build/zh-cn/getting-started/)
+
 [Gyoza 使用指南](https://github.com/lxchapu/astro-gyoza)
 
 ### 前置条件：
@@ -30,7 +31,6 @@ summary: 这篇文章记录了使用Astro与GitHub Pages基于模板（gyoza）�
 ```shell
 # 基于某个 GitHub 仓库的 main 分支创建一个新项目
 npm create astro@latest -- --template <用户名>/<仓库名>
-
 # 以gyoza为例
 npm create astro@latest -- --template lxchapu/astro-gyoza
 ```
@@ -55,89 +55,43 @@ gyoza项目中的绝大部分配置都定义在 `src/config.json` 文件中。
 
 ```yml
 name: Deploy to GitHub Pages
-
-
-
 on:
-
   # Trigger the workflow every time you push to the `main` branch
-
   # Using a different branch name? Replace `main` with your branch’s name
-
   push:
-
     branches: [main]
-
   # Allows you to run this workflow manually from the Actions tab on GitHub.
-
   workflow_dispatch:
-
-
-
 # Allow this job to clone the repo and create a page deployment
-
 permissions:
-
   contents: read
-
   pages: write
-
   id-token: write
-
-
-
 # Allow one concurrent deployment
-
 concurrency:
-
   group: "pages"
-
   cancel-in-progress: true
-
-
-
 jobs:
-
   build:
-
     runs-on: ubuntu-latest
-
     steps:
-
       - name: Checkout your repository using git
-
         uses: actions/checkout@v2
-
       - name: Install, build, and upload your site output
-
         uses: withastro/action@v0
-
         # with:
-
             # path: . # The root location of your Astro project inside the repository. (optional)
-
             # node-version: 16 # The specific version of Node that should be used to build your site. Defaults to 16. (optional)
-
             # package-manager: yarn # The Node package manager that should be used to install dependencies and build your site. Automatically detected based on your lockfile. (optional)
-
   deploy:
-
     needs: build
-
     runs-on: ubuntu-latest
-
     environment:
-
       name: github-pages
-
       url: ${{ steps.deployment.outputs.page_url }}
-
     steps:
-
       - name: Deploy to GitHub Pages
-
         id: deployment
-
         uses: actions/deploy-pages@v1
 ```
 
@@ -164,12 +118,14 @@ gh repo clone <用户名>/<仓库名>
 
 将`astro-gyoza`目录下的文件移动至上一步创建的文件夹中。
 为了方便，使用VS Code同步仓库。
-遇到的问题：1. VS Code 一直处于commit状态：这是VS Code的bug，commit时必须提交信息。2. 因commit格式要求导致的报错：修改`commitlint.config.js`为
+遇到的问题：
 
-```
+1. VS Code 一直处于commit状态：这是VS Code的bug，commit时必须提交信息。
+2. 因commit格式要求导致的报错：修改`commitlint.config.js`为
+
+```javascript
 export default {
   extends: ['@commitlint/config-conventional'],
-
   rules: {
     'subject-case': [2, 'never', ['upper-case', 'pascal-case', 'start-case']],
   },
