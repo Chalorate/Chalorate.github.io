@@ -166,7 +166,7 @@ gh repo clone <用户名>/<仓库名>
 为了方便，使用VS Code同步仓库。
 遇到的问题：1. VS Code 一直处于commit状态：这是VS Code的bug，commit时必须提交信息。2. 因commit格式要求导致的报错：修改`commitlint.config.js`为
 
-```javascript
+```
 export default {
   extends: ['@commitlint/config-conventional'],
 
