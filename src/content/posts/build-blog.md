@@ -3,8 +3,7 @@ title: 使用Astro与Github Pages搭建博客记录
 date: 2024-05-17
 tags:
   - Astro
-  - Github
-  - Pages
+  - GithubPages
   - 博客
 category: 实践
 comments: false
