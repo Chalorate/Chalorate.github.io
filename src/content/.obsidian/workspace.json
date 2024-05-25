@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/build-blog.md",
-                "mode": "preview",
+                "file": "templates/blog.md",
+                "mode": "source",
                 "source": true
               }
             }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "posts/build-blog.md",
+                "file": "templates/blog.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "posts/build-blog.md",
+                "file": "templates/blog.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "posts/build-blog.md"
+                "file": "templates/blog.md"
               }
             }
           }
@@ -149,15 +149,16 @@
   },
   "active": "a477614dffb4bfa9",
   "lastOpenFiles": [
-    "posts/markdown.md",
     "posts/build-blog.md",
+    "posts/markdown.md",
+    "posts/how-to-use-icons.md",
     "posts/guide.md",
     "posts/embed.md",
-    "posts/how-to-use-icons.md",
-    "templates/blog.md",
-    "spec/projects.md",
     "spec/friends.md",
+    "spec/projects.md",
     "spec/about.md",
+    "templates/blog.md",
+    "posts/你好.md",
     "templates/project.md",
     "templates/friends.md",
     "embed.md",
